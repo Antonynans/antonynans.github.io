@@ -1,4 +1,4 @@
-.App {
+#home {
   text-align: center;
 }
 
@@ -6,9 +6,9 @@
   height: 40vmin;
 }
 
-.App-header {
+#home-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +17,12 @@
   color: white;
 }
 
-.App-link {
+#home-link {
   color: #09d3ac;
+  flex-direction: column;
+  margin-right:20px;
+
+
 }
 
 input {

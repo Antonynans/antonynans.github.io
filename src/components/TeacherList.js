@@ -6,7 +6,7 @@ const TeacherList = props =>(
     <thead>
       <tr>
         <th>Name</th>
-        <th>Roll No</th>
+        <th>Teacher ID</th>
         <th>Class</th>
         <th>Section</th>
         <th>Action</th>
@@ -17,7 +17,7 @@ const TeacherList = props =>(
         props.teachers.map(item => (
           <tr key={item.id}>
             <td>{item.name}</td>
-            <td>{item.rollno}</td>
+            <td>{item.teacherId}</td>
             <td>{item.class}</td>
             <td>{item.section}</td>
             <td>

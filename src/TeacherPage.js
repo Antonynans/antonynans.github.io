@@ -7,7 +7,7 @@ const TeacherPage= () => {
   const teacherData = [
   ]
 
-  const initialFormState = { id: null, name: '', rollno: '', class: '', section: '' }
+  const initialFormState = { id: null, name: '', teacherId: '', class: '', section: '' }
 
   const [teachers, setTeachers] = useState(teacherData)
   const [editing, setEditing] = useState(false);
@@ -29,7 +29,7 @@ const TeacherPage= () => {
     setCurrentTeacher({ 
       id: teacher.id, 
       name: teacher.name, 
-      rollno: teacher.rollno, 
+      teacherId: teacher.teacherId, 
       class : teacher.class, 
       section : teacher.section 
     })
