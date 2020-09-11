@@ -31,8 +31,14 @@ const AddStudent = props => {
       <input type="number" name="class" min="1" max="12" value={student.class} onChange={handleInputChange}/>
       </div>
       <div><h6>Section</h6>   
-      <input type="text" name="section"  value={student.section} onChange={handleInputChange}/>
       </div>
+      <input type="radio" name="section" value="A" onChange={handleInputChange}/>A
+     <input type="radio" name="section" value="B" onChange={handleInputChange}/>B
+     <input type="radio" name="section" value="C" onChange={handleInputChange}/>C
+     <input type="radio" name="section" value="D" onChange={handleInputChange}/>D
+     <input type="radio" name="section" value="E" onChange={handleInputChange}/>E
+     <input type="radio" name="section" value="F" onChange={handleInputChange}/>F
+    <br/>
       <button className="btn btn-primary">Add Student</button>
     </form>
   )

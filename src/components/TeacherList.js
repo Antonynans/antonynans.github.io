@@ -21,7 +21,7 @@ const TeacherList = props =>(
             <td>{item.class}</td>
             <td>{item.section}</td>
             <td>
-              <button onClick={() => { props.EditTeacher(item) }} className="btn btn-default">Edit</button>
+              <button onClick={() => { props.editTeacher(item) }} className="btn btn-default">Edit</button>
               <button onClick={() => props.deleteTeacher(item.id)} className="btn btn-default">Delete</button>
             </td>
           </tr>

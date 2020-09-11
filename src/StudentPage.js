@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import StudentList from './components/StudentList';
 import  AddStudent from './components/AddStudent';
 import  EditStudent from './components/EditStudent';
@@ -60,6 +61,7 @@ const StudentPage= () => {
       ) : (
         <div>
         <h3 className="text-center">Add Student</h3>
+        <NavLink id="home-link" to="/">Home</NavLink>
         <div className="col-md-8 col-md-offset-2">
           <AddStudent addStudent={addStudent} />
         </div>
